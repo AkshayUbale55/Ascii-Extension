@@ -1,0 +1,50 @@
+{
+	"name": "ascii-snippet",
+	"displayName": "Ascii Suggestion",
+	"description": "Ascii code for simplified devlopment",
+	"version": "1.0.1",
+	"publisher": "PranxXxD",
+	"repository": {
+		"url": "https://github.com/PranxXxD"
+	},
+	"icon": "Icon.png",
+	"engines": {
+		"vscode": "^1.52.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:plaintext",
+		"onCommand:extension.suggestAsciiCodes"
+		
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands":[{
+			"command": "extension.suggestAsciiCodes",
+        	"title": "Suggest ASCII Codes",
+			"category": "Text"
+		}]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.52.0",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.4",
+		"@types/node": "^12.11.7",
+		"eslint": "^7.15.0",
+		"glob": "^7.1.6",
+		"mocha": "^8.1.3",
+		"typescript": "^4.1.2",
+		"vscode-test": "^1.4.1"
+	},
+	"dependencies": {
+		"axios": "^0.21.1",
+		"fast-xml-parser": "^3.17.6"
+	}
+}

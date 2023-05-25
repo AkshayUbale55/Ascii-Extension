@@ -1,0 +1,70 @@
+
+[{
+  "character": "®",
+  "asciiCode": "&#00174;"
+},
+ {
+  "character": "™",
+  "asciiCode":"&#08482;"
+  },
+ { 
+  "character":"©",
+  "asciiCode":"&#00169;"
+},
+{  "character":"&",
+   "asciiCode": "&#00038;"},
+{
+  "character" :"≤",
+  "asciiCode":"&#8804;"
+},
+ { "character":"≥",
+  "asciiCode":"&#8805;"
+},
+{ 
+  "character": "<",
+  "asciiCode":"&#00060;"
+},
+  {
+    "character":">",
+     "asciiCode":"&#00062;"
+  },
+{
+    "character":"-",
+    "asciiCode" :[
+    "&#00045;",
+    "&#8209;",
+    "08211;",
+    "&#08212;",
+    "&#08213;"
+]},
+  {
+    "character":"*",
+    "asciiCode": "&#00042;"
+  },
+ {
+  "character":"•",
+  "asciiCode":"&#08226;"
+},
+  {
+    "character":"ï", 
+    "asciiCode":"&#00239;"
+  },
+  {
+    "character":"’",
+     "asciiCode":"&#08217;"
+  },
+{  
+  "character":"‘",
+  "asciiCode": ["&#39;",
+        "&#8217;",
+        "&#8216;"]
+},
+  {
+    "character":"±",
+    "asciiCode": "&#00177;"
+  },
+ { 
+  "character":"~",
+  "asciiCode": "&#00126;"
+}
+]
