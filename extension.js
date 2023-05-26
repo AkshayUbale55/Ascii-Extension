@@ -1,4 +1,3 @@
-
 const vscode = require('vscode');
 const suggestions = require('./ascii-values.json');
 
@@ -11,18 +10,24 @@ function activate(context) {
       const character = selectedText[i];
       const asciiCode = suggestions[character];
       if (asciiCode !== undefined) {
-        suggestedAsciiCodes.push(asciiCode);
+        suggestedAsciiCodes.push({character,asciiCode});
       }
-    }
-
+    
     if (suggestedAsciiCodes.length > 0) {
       vscode.window.showInformationMessage(
-        'Suggested ASCII codes for the selected passage:',
-        ...suggestedAsciiCodes.map(code => String(code))
-      );
-    } else {
+        'Suggested ASCII codes for the selected character:  ' +  asciiCode,
+        ...suggestedAsciiCodes.map(code => String(code.asciiCode))).then((asciiCode) => {
+          if (asciiCode) {
+            const codeToCopy = asciiCode; // ASCII code to copy
+            vscode.env.clipboard.writeText(codeToCopy.toString()); // Copy the ASCII code to the clipboard
+            vscode.window.showInformationMessage('ASCII code copied to clipboard: ' + codeToCopy);
+          }
+        });
+    } 
+    else {
       vscode.window.showWarningMessage('No ASCII code suggestions found for the selected passage.');
     }
+  }
   });
 
   context.subscriptions.push(disposable);
@@ -35,15 +40,4 @@ module.exports = {
   deactivate
 };
 
-      // const items = suggestedAsciiCodes.map(({character,asciiCode}) => ({
-      //   label : character,
-      //   description: `ASCII code: ${asciiCode}`,
-      //   detail: 'Click to insert',
-      // }));
-    //   vscode.window.showQuickPick(items).then(item => {
-    //     if (item) {
-    //       const { character } = suggestedAsciiCodes.find(obj => obj.character === item.description);
-    //       const currentPosition = textEditor.selection.active;
-    //       edit.insert(currentPosition,character);
-    //     }
-    //   });
+     

@@ -1,7 +1,12 @@
-# WDS Blog Search
 
-This extension lets you search for any of Web Dev Simplified's blog articles from within VSCode.
+# ASCII CODE EXTENSION
+
+This extension lets you integrate the ASCII CODE of any character within VSCode. instead of googling it.
 
 ## Features
+1st Method:-
+Select the character which you want the ASCII CODE then simply click the `ctr+shift+p` and Run the command `Suggest ASCII Codes` then copy the ASCII CODE and paste in the place of the selected character.
 
-Run the command `Search WDS Blog` and then search for any query to narrow the list of articles to your search.
+2nd Method:- 
+if you want to reduce the steps for running the estension click the `ctr+shift+p` and type the `Suggest ASCII Codes` and right side of that command you get to see the settings icon click on the setting's option then click on the edit `Key Bindings` option thenadd the prefered keyboard shortcuts as per your requirement.
+
