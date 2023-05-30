@@ -2,10 +2,10 @@
 	"name": "ascii-snippet",
 	"displayName": "Ascii Suggestion",
 	"description": "Ascii code snippet for simplified devlopment",
-	"version": "1.2.1",
+	"version": "1.2.2",
 	"publisher": "SaipranayAlishetty",
 	"repository": {
-		"url": "https://github.com/PranxXxD"
+		"url": "https://github.com/PranxXxD/Ascii-Extension/"
 	},
 	"icon": "Icon.png",
 	"engines": {
