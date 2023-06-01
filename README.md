@@ -11,5 +11,9 @@ Select the character which you want the ASCII CODE then simply click the `ctr+sh
 if you want to reduce the steps for running the estension click the `ctr+shift+p` and type the `Suggest ASCII Codes` and right side of that command you get to see the settings icon click on the setting's option then click on the edit `Key Bindings` option thenadd the prefered keyboard shortcuts as per your requirement.
 
 # Usages
-![usage_video](https://github.com/PranxXxD/Ascii-Extension/blob/main/usage_video.gif)
+![usage_video](/usage_video.gif)
+
+<!-- <img src="https://github.com/PranxXxD/Ascii-Extension/blob/main/usage_video.gif" width="400" height="600"> -->
+
+
 

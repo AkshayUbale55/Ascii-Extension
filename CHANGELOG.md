@@ -1,9 +1,8 @@
 # Change Log
 
-All notable changes to the "wds-search-blog-example" extension will be documented in this file.
+# Changelog
+Ascii code Bug fixes
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [released]
 
-## [Unreleased]
-
-- Initial release
+- 1.2.8v

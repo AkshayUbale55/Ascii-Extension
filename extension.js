@@ -21,12 +21,13 @@ function activate(context) {
             const codeToCopy = asciiCode; // ASCII code to copy
             vscode.env.clipboard.writeText(codeToCopy.toString()); // Copy the ASCII code to the clipboard
             vscode.window.showInformationMessage('ASCII code copied to clipboard: ' + codeToCopy);
-          }
+          } 
         });
     } 
     else {
-      vscode.window.showWarningMessage('No ASCII code suggestions found for the selected passage.');
+      vscode.window.showWarningMessage('No ASCII code suggestions found for the selected character.');
     }
+
   }
   });
 
