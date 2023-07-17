@@ -25,7 +25,8 @@
 			"command": "extension.suggestAsciiCodes",
         	"title": "Suggest ASCII Codes",
 			"category": "Text"
-		}]
+		}
+		]
 	},
 	"scripts": {
 		"lint": "eslint .",
