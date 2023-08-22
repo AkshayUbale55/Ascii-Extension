@@ -5,4 +5,4 @@ Ascii code Bug fixes
 
 ## [released]
 
-- 1.2.8v
+- 1.3v
